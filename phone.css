@@ -1,0 +1,29 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.calculator{
+      height:300px;
+      width:300px;
+      border-radius: 15px;
+}
+.row-button{
+    height:40px;
+    width:40px;
+    font-size: 1rem;
+}
+.row-button-1{
+    height:40px;
+    width:40px;
+    font-size: 1rem;
+}
+.row-button-2{
+    height:40px;
+    width:40px;
+    font-size: 1rem;
+}
+textarea{
+    width:300px;
+    height:40px;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"  media="screen and (max-width:1100px)"   href="phone.css">
+    
+</head>
+<body>
+       <div class="calculator">
+        <textarea class="row-text"></textarea>
+        <div class="row">
+            <button class="row-button-1" onclick="  currentDisplay=''; document.querySelector('.row-text').value=currentDisplay;  "> AC</button>
+            <button class="row-button-1"> DEL</button>
+            <button class="row-button-1" onclick="currentDisplay=currentDisplay +  '()';
+            document.querySelector('.row-text').value=currentDisplay  ;  "> ()</button>
+            <button class="row-button-1"onclick="currentDisplay=currentDisplay +  '%';
+            document.querySelector('.row-text').value=currentDisplay ;" > %</button>
+        </div>
+        <div class="row">
+            <button class="row-button" onclick="currentDisplay=currentDisplay +  '7';
+            document.querySelector('.row-text').value=currentDisplay ;" > 7</button>
+            <button class="row-button" onclick="currentDisplay=currentDisplay +  '8';
+            document.querySelector('.row-text').value=currentDisplay ;" > 8</button>
+            <button class="row-button" onclick="currentDisplay=currentDisplay +  '9';
+            document.querySelector('.row-text').value=currentDisplay ;"  > 9</button>
+            <button class="row-button-1" onclick="currentDisplay=currentDisplay +  '*';
+            document.querySelector('.row-text').value=currentDisplay ;"  > *</button>
+        </div>
+        <div class="row">
+            <button class="row-button" onclick="currentDisplay=currentDisplay +  '4';
+            document.querySelector('.row-text').value=currentDisplay ;" > 4</button>
+            <button class="row-button" onclick="currentDisplay=currentDisplay +  '5';
+            document.querySelector('.row-text').value=currentDisplay ;" > 5</button>
+            <button class="row-button"  onclick="currentDisplay=currentDisplay +  '6';
+            document.querySelector('.row-text').value=currentDisplay ;" > 6</button>
+            <button class="row-button-1"onclick="currentDisplay=currentDisplay +  '-';
+            document.querySelector('.row-text').value=currentDisplay ;"  > -</button>
+        </div>
+        <div class="row">
+            <button class="row-button" onclick="currentDisplay=currentDisplay+ '1' ; document.querySelector('.row-text').value=currentDisplay; "> 1</button>
+            <button class="row-button" onclick="currentDisplay=currentDisplay + '2' ;
+            document.querySelector('.row-text').value=currentDisplay; "> 2</button>
+            <button class="row-button" onclick=" currentDisplay=currentDisplay+ '3';
+            document.querySelector('.row-text').value=currentDisplay;"> 3</button>
+            <button class="row-button-1" onclick=" currentDisplay=currentDisplay+ '+';
+            document.querySelector('.row-text').value=currentDisplay;"> +</button>
+        </div>
+        <div class="row">
+            <button class="row-button-1"onclick=" currentDisplay=currentDisplay+ '/';
+            document.querySelector('.row-text').value=currentDisplay;" > / </button>
+            <button class="row-button" onclick=" currentDisplay=currentDisplay+ '0';
+            document.querySelector('.row-text').value=currentDisplay;"> 0</button>
+            <button class="row-button"onclick=" currentDisplay=currentDisplay+ '.';
+            document.querySelector('.row-text').value=currentDisplay;" > . </button>
+            <button class="row-button-2" onclick="   let result= eval(currentDisplay) ;
+            currentDisplay=result; document.querySelector('.row-text').value=currentDisplay;"    > = </button>
+        </div>
+       </div>
+       <script>
+            let currentDisplay=" ";
+            document.querySelector('.row-text').value=currentDisplay;
+       </script>
+</body>
+</html>
